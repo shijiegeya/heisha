@@ -1,0 +1,50 @@
+<h2>登录</h2>
+<!--<form method="get" action="/user/login1">
+	
+	<input type="submit">
+</form>-->
+<script src="jquery.min.js"></script>
+<script>
+window.onload=function(){
+	/*var xhr = new XMLHttpRequest();
+	if(window.XMLHttpRequest){
+		//如果有这个属性说明是iE8以上的浏览器
+		var xhr = new XMLHttpRequest();
+		console.log(xhr);
+	}else{
+		//如果没有这个属性说明是IE8以下的浏览器
+		var xhr = new ActiveXObject('Microsoft.XMLHttp');
+	}
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState==4&&xhr.status==200){
+			var obj=JSON.parse(xhr.responseText);
+			console.log(obj);
+		}
+	}
+	xhr.open("get","http://127.0.0.1:8080/user/banners",true);
+	xhr.send(null);*/
+	$.ajax({
+		url:"http://127.0.0.1:8080/user/banners",
+        type: "get",
+		data:"",
+          //如果本次请求没有参数，可省略data
+  		dataType: "json",
+		  //按照国际标准所有服务端接口，都应该返回json格式的字符串。
+          //但是也不排除例外
+          //如果返回的不是json，就不要写dataType:"json"，会出错。
+          //因为dataType:"json"是自动执行JSON.parse()的意思。如果服务端返回的字符串不是json格式，则JSON.parse()会报错！
+        //success函数是一个回调函数，会在请求成功结束后，自动调用。参数result，会自动获得服务端返回的值。而且已经被JSON.parse()，范围为js对象了。
+		success:function(result){
+		  //... ...
+		  console.log(result);
+        }
+    })
+    //ES 6 promise中
+	//.then(function(result){
+      //result 获得的就是服务端返回的数据
+    //})
+    //强调: success: 和 .then() 二选一即可！
+
+
+}
+</script>

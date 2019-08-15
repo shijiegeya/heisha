@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <!-- 导入css-->
+     <link rel="stylesheet" href="css/bootstrap.css"/>
+     <link rel="stylesheet" href="css/comm.css"/>
+     <link rel="stylesheet" href="css/cart.css" />
+     <!-- 导入3个js-->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+    	<div id="nav_z_index" class="row p-0 m-0 my_border_color">
+	    		<div class="col-lg-12 p-0 m-0 row">
+	    		<!--
+	            	作者：302785749@qq.com
+	            	时间：2019-05-25
+	            	描述：导航		--→ Id选择器，深情又专一
+	            -->
+	            	<div class="col-md-3 col-lg-3 offset-1  p-lg-2 pl-md-0 pr-md-0 pt-md-2 pb-md-2 d-none d-md-block">
+	            		<a href="#" class="h2  my_text_color  my_logo ">Black Shark</a>
+	            	</div>
+		            <div class="navbar navbar-expand-md bg-transparent navbar-dark col-md-8">
+		                <!--最前面不折叠的菜单项-->
+		                <a href="http://127.0.0.1:5500/index.html" class="navbar-brand d-md-none ml-sm-4">黑鲨官网</a>
+		                <!--在超小屏下出现的按钮-->
+		                <button class="navbar-toggler mr-sm-4" data-toggle="collapse" data-target="#content">
+		                    <!--按钮上的三条横线-->
+		                    <span class="navbar-toggler-icon"></span>
+		                </button>
+		                <!--折叠的导航-->
+		                <div id="content" class="collapse navbar-collapse w-100 row p-0 m-0 ">
+		                    <ul class="navbar-nav col-md-8 row p-0 m-0">
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="http://127.0.0.1:5500/index.html" class="nav-link text-white w-100 my_text_size">首页</a>
+		                        </li>
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="#" class="nav-link text-white w-100 my_text_size">产品</a>
+		                        </li>
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="http://127.0.0.1:5500/shopping.html" class="nav-link text-white w-100 my_text_size">商城</a>
+		                        </li>
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="#" class="nav-link text-white w-100 my_text_size">服务</a>
+		                        </li>
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="http://127.0.0.1:5500/community.html" class="nav-link text-white w-100 my_text_size">社区</a>
+		                        </li>
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="#" class="nav-link text-white w-100 my_text_size">Global</a>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+	            </div>
+            </div>
+</div>
+</div>
+<div class="container mt-5" style="background:#eee; border-radius:20px;">
+   <ul class="list-unstyled p-5" id="my_ul" onclick="checlitem(event)">
+		<!--js填充-->
+   </ul>
+</div> 
+<div class="container mt-2 clearfix mb-5">
+	<button class="btn" id="bts">去结算<span>(￥0.00)</span></button>
+	<div style="float:right" id="inps">
+		<div>
+			<label for="my_inp">全选</label>
+			<input id="my_inp" onChange="checkAll()" type="checkbox"> 
+		</div>
+	</div>
+	<button class="btn btsLeft" id="clearCar">清空购物车<span></span></button>
+</div>
+</body>
+<script>
+	
+	$(function(){ 
+		//页面加载完成自动加载本地缓存中的商品到购物车
+		loadMore();
+	})
+	function loadMore(){
+		var arrs = JSON.parse(localStorage.getItem("arrs"));
+		console.log(arrs);
+		if(arrs!=null){
+			var ul_liItem="";
+			for(var i=0;i<arrs.length;i++){
+				ul_liItem+=`
+					<li class="p-3 my-3">
+						<div>
+						<input type="checkbox">
+						</div>
+						<div>
+							<img src="${arrs[i].img}" width="100px" height="100px">
+						</div>	
+					<div>${arrs[i].colors}</div>
+					<div>${arrs[i].banbens}</div>
+					<div>${arrs[i].fangshis}</div>
+					<div>${arrs[i].adddata}</div>
+					<div>￥${arrs[i].price}</div>
+				</li>
+				`
+			}
+			$("#my_ul").html(ul_liItem);
+		}else{
+			ul_liItem =`
+					<li class="p-3 my-3">
+						<div class="w-100">
+							您还没有添加任何商品到购物车
+						</div>
+					</li>
+				`
+			$("#my_ul").html(ul_liItem);
+			console.log(arrs);
+		}
+	}
+	//点击清空购物车 清空本地缓存
+	$("#clearCar").click(()=>{
+		localStorage.clear();
+		console.log(JSON.parse(localStorage.getItem("arrs")));
+		loadMore();
+	})
+	//判断单个商品选中
+	var shopSum=0;//记录input选中商品数量
+	var shopPrice=0;//记录价格
+	function checlitem(e){
+		//如果点击的是input组件
+		if(e.path[0].type=="checkbox"){
+			var shopp=e.path[0].parentNode.parentNode.children;
+			var shopic=shopp[shopp.length-1].innerHTML.slice(1);
+			//console.log(shopic)
+			//该组件为选中状态  记录input选中数量  记录价格
+			if(e.path[0].checked){
+				shopSum++;
+				shopPrice+=parseFloat(shopic)
+			}else{//该组件为非选中状态  记录input选中数量  记录价格
+				shopSum--;
+				shopPrice-=parseFloat(shopic)
+			}
+			//若选中单个组件数量等于全部商品数量
+			var items = $("#my_ul")[0].children; 
+			if(items.length==shopSum){
+				$("#my_inp").prop("checked",true);//设置全选按钮为true
+				  shopPrice=0;
+				  shopSum=0;
+				for(var i=0;i<items.length;i++){//清空选中数量和价格  循环记录所有数量和价格
+					var shop =parseFloat(items[i].lastElementChild.innerHTML.slice(1));
+					shopPrice+=shop;
+					shopSum++
+				}
+			}else{//若不是全部选中 设置全选按钮为flase
+				$("#my_inp").prop("checked",false);
+			}
+			//最后将计算出的价格追加到页面
+			$("#bts span").html(`(￥${shopPrice.toFixed(2)})`);
+		}
+	}
+	//全选按钮
+	function checkAll(){
+		if($("#my_inp").is(":checked")){//如果全选按钮选中
+			$("#my_ul li div:first-child input").prop("checked",true);//将子input全部选中
+			var items = $("#my_ul li div:first-child>input"); 
+			shopPrice=0;
+			shopSum=0
+			for(var item of items){//循环记录商品数量和总价格
+				var shop =item.parentNode.parentNode.children;
+				var shops = parseFloat(shop[shop.length-1].innerHTML.slice(1));
+				shopPrice+=shops;
+				shopSum++
+			}
+			//价格追加到页面
+			$("#bts span").html(`(￥${shopPrice.toFixed(2)})`);
+		}else{//若取消全选  将价格 选中数量及子商品input按钮设置为0和false
+			$("#my_ul li div:first-child input").prop("checked",false);
+			shopSum=0;
+			shopPrice=0;
+			//追加总价格到页面
+			$("#bts span").html(`(￥${shopPrice.toFixed(2)})`);
+		}
+	}
+</script>
+</html>

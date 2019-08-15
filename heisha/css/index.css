@@ -1,0 +1,117 @@
+
+/*导航处理>*/
+#nav_z_index{
+	position: relative;
+	z-index: 100;
+	background-color:#242424;
+	box-shadow: 0px 1px 15px rgba(17,210,7,0.3);
+}
+.my_border_color{
+	border-bottom:1px solid rgba(255,255,255,0.1);
+}
+/*nav字体*/
+
+@media screen and (min-width:992px ){/*d*/
+	#nav_z_index #content ul li a:hover{
+		color:#00ec00 !important;
+	}
+}
+@media screen and (max-width:990px ) and (min-width:950px){/*d*/
+	#my_footer ul#my_footer_ul{
+		padding-left: 4.5rem !important;
+	}
+}
+@media screen and (max-width:949px ) and (min-width:870px){/*d*/
+	#my_footer ul#my_footer_ul{
+		padding-left: 2.5rem !important;
+	}
+}
+@media screen and (max-width:991px ) and (min-width:768px) {/*z*/
+	#nav_z_index #content ul li a:hover{
+		color:#00ec00 !important;
+	}
+}
+@media screen and (max-width:767px) and (min-width:300px) {/*x*/
+	#nav_z_index #content ul li:hover{
+		color:#00ec00 !important;
+		background-color:rgba(17,210,7,0.3);
+	}
+	#nav_z_index #content ul li a:hover{
+		color:#00ec00 !important;
+	}
+}
+
+#nav_z_index .my_logo{
+	text-decoration: none;
+	font-family: "mv boli";
+}
+/*导航处理结束<*/
+/*焦点轮播图样式处理>*/
+.carousel-control-prev,
+.carousel-control-next{
+    width: 4%;
+    height: 10%;
+    top:45%;
+}
+.carousel-indicators li{
+    width: 0.55rem;
+    height: 0.55rem;
+    background: #fff;
+    border-radius:50%;
+	margin: 0 0.75rem;
+}
+.carousel-indicators li:hover{
+	cursor: pointer;
+}
+.carousel-indicators .active{
+	background: #00ec00;
+}
+
+
+/*焦点轮播图样式处理结束<*/
+/*缩略图开始 >*/
+#thnumb .thnumb_fu{
+	position: relative;
+}
+#thnumb .thnumb_fu .thnumb_zi{
+	position: absolute;
+	width:50%;
+	height:2rem;
+	left:50%;
+	top:50%;
+	margin-left: -25%;
+	margin-top: -1rem;
+	z-index: 100;
+	text-align: center;
+	color:white;
+}
+
+/*缩略图结束<*/
+/*底栏开始>*/
+#my_footer{
+	background-color:#000;
+	color:rgba(255,255,255,0.4);
+}
+#my_footer div ul li a{
+	color:white !important;
+	font-size: 14px;
+}
+#my_footer div ul li a:hover{
+	color:#00ec00 !important;
+	text-decoration: none;
+}
+#my_footer .breadcrumb-item+.breadcrumb-item::before{
+    content:'|';
+    color:white !important;
+}
+#my_footer .breadcrumb{
+    background-color:transparent;
+}
+#my_footer .my_text_size{
+	font-size:13px;
+}
+#my_footer .my_img_size{
+	width: 1.1rem;
+    height: 1.1rem;
+}
+/*底栏结束*/

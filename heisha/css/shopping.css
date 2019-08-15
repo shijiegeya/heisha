@@ -1,0 +1,151 @@
+
+body{
+    background-color:#f4f4f4;
+}
+/*导航处理>*/
+#nav_z_index{
+    position: relative;
+    z-index: 100;
+    background-color:#242424;
+    box-shadow: 0px 1px 15px rgba(17,210,7,0.3);
+}
+.my_border_color{
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+/*nav字体*/
+@media screen and (min-width:992px ){/*d*/
+    #nav_z_index #content ul li a:hover{
+        color:#00ec00 !important;
+    }
+}
+@media screen and (max-width:990px ) and (min-width:950px){/*d*/
+    #nav_z_index #content ul li a:hover{
+        color:#00ec00 !important;
+    }
+    #my_footer ul#my_footer_ul{
+        padding-left: 4.5rem !important;
+    }
+}
+@media screen and (max-width:949px ) and (min-width:870px){/*d*/
+    #my_footer ul#my_footer_ul{
+        padding-left: 2.5rem !important;
+    }
+}
+@media screen and (max-width:991px ) and (min-width:768px) {/*z*/
+    #nav_z_index #content ul li a:hover{
+        color:#00ec00 !important;
+    }
+}
+@media screen and (max-width:767px) and (min-width:300px) {/*x*/
+    #nav_z_index #content ul li:hover{
+        color:#00ec00 !important;
+        background-color:rgba(17,210,7,0.3);
+    }
+    #nav_z_index #content ul li a:hover{
+        color:#00ec00 !important;
+    }
+}
+
+#nav_z_index .my_logo{
+    text-decoration: none;
+    font-family: "mv boli";
+}
+/*导航处理结束<*/
+/*焦点轮播图样式处理>*/
+.carousel-control-prev,
+.carousel-control-next{
+    width: 4%;
+    height: 10%;
+    top:45%;
+}
+.carousel-indicators li{
+    width: 0.55rem;
+    height: 0.55rem;
+    background: #fff;
+    border-radius:50%;
+    margin: 0 0.75rem;
+}
+.carousel-indicators li:hover{
+    cursor: pointer;
+}
+.carousel-indicators .active{
+    background: #00ec00;
+}
+/*焦点轮播图样式处理结束<*/
+
+/*商品01 ->*/
+.shopping .shopping_1 a{
+    text-decoration: none;
+}
+.shopping .shopping_1 li a{
+    background-color: #fff;
+}
+.shopping .shopping_1 li i{
+    padding: 1px 9px;
+    text-align: center;
+    border: 1px solid rgba(0,192,60,0.7);
+    background-color: rgba(0,192,60,0.08);
+    font-size: 12px;
+    font-style: normal;
+    color: #00c03c;
+}
+.shopping .shopping_1 li p:nth-child(3){
+    font-size: 15px;
+    color: #333333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.shopping_1 li p:nth-child(4){
+     font-size: 13px;
+     color: #999999;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden;
+ }
+.shopping .shopping_1 li p:nth-child(5){
+    font-size: 15px;
+    color: #00C03C;
+}
+.shopping .title1{
+    font-size: 18px;
+    color: #333333;
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+/*商品01 -<*/
+/*底栏开始 - >*/
+.my_footer .my_footer_list1 ul li{
+    font-size: 13px;
+    color: #999999;
+}
+.my_footer .my_footer_list2{
+    padding-left: 2.6rem !important;
+}
+.my_footer .my_footer_list2 ul li{
+    font-size: 13px;
+    color: #999999;
+    padding-bottom: 0.3rem;
+}
+.my_footer .my_footer_list2 ul li a{
+    color: #999999;
+    text-decoration: none;
+}
+.my_footer .my_footer_list2 ul li:first-child{
+    font-size: 15px;
+    padding-bottom: 0.5rem;
+}
+.my_footer .my_footer_list2 ul li:first-child a{
+    color: #333333;
+}
+.my_footer .my_footer_list2 ul li a:hover{
+    color: #00C03C;
+}
+.my_footer .my_footer_list3 ul li{
+    font-size: 13px;
+    color: #999999;
+}
+.my_footer .my_footer_list3 ul li img{
+   width:1.3rem;
+}
+/*底栏结束 - <*/

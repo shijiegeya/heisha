@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- 设置视口-->
+    <meta name="viewport" content="width=divice-width,initial-scale=1"/>
+    <!-- 导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/shopping.css"/>
+    <link rel="stylesheet" type="text/css" href="css/comm.css"/>
+    <!-- 导入3个js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body class="body">
+    <div class="container-fluid">
+        <div id="nav_z_index" class="row p-0 m-0 my_border_color">
+            <div class="col-lg-12 p-0 m-0 row">
+                <!--
+                    作者：302785749@qq.com
+                    时间：2019-05-25
+                    描述：导航
+                 -->
+                <div class="col-md-3 col-lg-3 offset-1  p-lg-2 pl-md-0 pr-md-0 pt-md-2 pb-md-2 d-none d-md-block">
+                    <a href="#" class="h2  my_text_color  my_logo">Black Shark</a>
+                </div>
+                <div class="navbar navbar-expand-md bg-transparent navbar-dark col-md-8">
+                    <!--最前面不折叠的菜单项-->
+                    <a href="http://127.0.0.1:5500/shopping.html" class="navbar-brand d-md-none ml-sm-4">黑鲨商城</a>
+                    <!--在超小屏下出现的按钮-->
+                    <button class="navbar-toggler mr-sm-4" data-toggle="collapse" data-target="#content">
+                        <!--按钮上的三条横线-->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--折叠的导航-->
+                    <div id="content" class="collapse navbar-collapse w-100 row p-0 m-0 ">
+                        <ul class="navbar-nav col-md-8 row p-0 m-0">
+                            <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+                                <a href="http://127.0.0.1:5500/shopping.html" class="nav-link text-white w-100 my_text_size">商城</a>
+                            </li>
+                            <li class="nav-item col-md-3 p-0 m-0 text-lg-center pl-5 p-md-0">
+                                <a href="#" class="nav-link text-white w-100 my_text_size">游戏加速</a>
+                            </li>
+                            <li class="nav-item col-md-3 p-0 m-0 text-lg-center pl-5 p-md-0">
+                                <a href="#" class="nav-link text-white w-100 my_text_size">以旧换新</a>
+                            </li>
+                            <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+                                <a href="#" class="nav-link text-white w-100 my_text_size">服务</a>
+                            </li>
+                            <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+                                <a href="http://127.0.0.1:5500/community.html" class="nav-link text-white w-100 my_text_size">社区</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+            作者：302785749@qq.com
+            时间：2019-05-25
+            描述：焦点轮播图
+        -->
+        <div class="carousel" id="banners" data-ride="carousel">
+            
+        </div>
+    </div>
+
+    <!--
+                作者：302785749@qq.com
+                时间：2019-05-25
+                描述：商品1
+     -->
+    <div class="container pb-5 mb-5" id="shop_f">
+        <!---商品行1---->
+        
+    </div>
+    <!--
+    作者：302785749@qq.com
+    时间：2019-05-25
+    描述：底栏
+    -->
+    <div class="container-fluid bg-white">
+        <table></table>
+        <div class="my_footer row p-0 m-0 pt-5 mt-5">
+            <div class="my_footer_list1 border-bottom pb-5 mb-5 col-md-8 offset-md-2">
+                <ul class="list-unstyled row p-0 m-0">
+                    <li class="text-center col-md-4 col-12">7天无理由退货</li>
+                    <li class="text-center col-md-4 col-12">质量问题15天换货</li>
+                    <li class="text-center col-md-4 col-12">满99元包邮</li>
+                </ul>
+            </div>
+            <div class="my_footer_list2 border-bottom pb-5 row col-md-8 offset-md-2">
+                <ul class="list-unstyled row p-0 m-0 col-md-6">
+                    <li class="text-center col-12">
+                        <a href="#">相关链接</a>
+                    </li>
+                    <li class="text-center col-12">
+                        <a href="#">黑鲨官网</a>
+                    </li>
+                    <li class="text-center col-12">
+                        <a href="#">黑鲨论坛</a>
+                    </li>
+                    <li class="text-center col-12">
+                        <a href="#">黑鲨云服务</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled row p-0 m-0 col-md-6">
+                    <li class="text-center col-12">
+                        <a href="#">黑鲨客服热线</a>
+                    </li>
+                    <li class="text-center col-12">
+                        <a href="#">400-015-8899</a>
+                    </li>
+                    <li class="text-center col-12">
+                        <a href="#">产品咨询、技术支持及相关问题</a>
+                    </li>
+                    <li class="text-center col-12">
+                        <a href="#">09：00 ~ 24：00</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="my_footer_list3 border-bottom py-4 col-md-8 offset-md-2">
+                <ul class="list-unstyled row p-0 m-0">
+                    <li class="text-md-left text-center col-md-6 col-12">做个俗人，谈笑风生不动情</li>
+                    <li class="text-md-right text-center col-md-6 col-12">关注我们：
+                        <img src="img/image_sc/weixin.png" class="img-fluid"/>
+                        <img src="img/image_sc/weibo.png" class="img-fluid"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="js/shopping.js"></script>
+</html>

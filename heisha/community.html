@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- 设置视口-->
+    <meta name="viewport" content="width=divice-width,initial-scale=1"/>
+    <!-- 导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/comm.css"/>
+    <link rel="stylesheet" href="css/community.css"/>
+    <!-- 导入3个js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body class="body">
+<div class="container-fluid">
+    <div id="nav_z_index" class="row p-0 m-0 my_border_color px-4 px-sm-0">
+        <div class="col-lg-12 p-0 m-0 row">
+            <!--
+                作者：302785749@qq.com
+                时间：2019-06-02
+                描述：导航
+             -->
+            <div class="col-md-2 col-lg-2 offset-1  p-lg-2 pl-md-0 pr-md-0 pt-md-2 pb-md-2 d-none d-md-block">
+                <a href="#" class="h4">
+                    <img src="img/image_sq/title.png" class="img-fluid"/>
+                </a>
+            </div>
+            <div class="navbar navbar-expand-md bg-transparent navbar-dark col-md-9 px-0">
+                <!--最前面不折叠的菜单项-->
+                <a href="#" class="navbar-brand d-md-none ml-sm-4">
+                    <img src="img/image_sq/title.png" class="img-fluid"/>
+                </a>
+                <input type="text" class="my_input py-1 d-md-none"/>
+                <div class=" p-0 p-md-0 d-md-none my_a_hover">
+                    <a href="#" class="text-white my_text_size my_a_decoration_none">登录</a>
+                    <span class="text-white my_text_size">/</span>
+                    <a href="#" class="text-white my_text_size my_a_decoration_none">注册</a>
+                </div>
+                <!--在超小屏下出现的按钮-->
+                <button class="navbar-toggler mr-sm-4 my_nav_btn" data-toggle="collapse" data-target="#content">
+                    <!--按钮上的三条横线-->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--折叠的导航-->
+                <div id="content" class="collapse navbar-collapse w-100 row p-0 m-0 ">
+                    <ul class="navbar-nav col-md-10 row p-0 m-0">
+                        <li class="nav-item col-md-2 p-0 m-0 text-md-center pl-5 p-md-0">
+                            <a href="http://127.0.0.1:5500/index.html" class="nav-link text-white w-100 my_text_size">首页</a>
+                        </li>
+                        <li class="nav-item col-md-2 p-0 m-0 text-md-center pl-5 p-md-0">
+                            <a href="#" class="nav-link text-white w-100 my_text_size">新帖</a>
+                        </li>
+                        <li class="nav-item col-md-2 p-0 m-0 text-md-center pl-5 p-md-0">
+                            <a href="#" class="nav-link text-white w-100 my_text_size">板块</a>
+                        </li>
+                        <li class="nav-item col-md-2 p-0 m-0 text-md-center pl-5 p-md-0 row d-md-flex d-none">
+                            <input type="text" class="my_input px-2 py-1 col-12"/>
+                        </li>
+                        <li class="row p-0 m-0 nav-item col-md-2 p-0 m-0 pl-5 p-md-0 d-md-flex d-none">
+                            <div class="nav-item p-0 m-auto p-md-0">
+                                <a href="#" class="text-white my_text_size my_a_decoration_none">登录</a>
+                                <span class="text-white my_text_size">/</span>
+                                <a href="#" class="text-white my_text_size my_a_decoration_none">注册</a>
+                            </div>
+                        </li>
+                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+                            <a href="http://127.0.0.1:5500/index.html" class="nav-link text-white w-100 my_text_size">黑鲨官网</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <!--
+                  作者：302785749@qq.com
+                  时间：2019-06-10
+                  描述：焦点轮播图
+              -->
+    <div class="carousel mt-3 mt-md-5 " id="banners" data-ride="carousel">
+        
+   </div> 
+
+    <!--
+         作者：302785749@qq.com
+         时间：2019-06-15
+         描述：文章 关键字展示
+    -->
+    <div id="article" class="row p-0 m-0 mt-3 ">
+        <!--小屏显示的文章关键字-->
+        <div  id="min_display_keywords" class="col-lg-12 d-sm-flex d-md-none p-0">
+            <div class="row p-0 m-0 w-100 text-center mb-2">
+                <div class="col-4 p-0 m-0 pr-1 mb-3">
+                    <a href="#" class="btn btn-success w-100">发表新帖</a>
+                </div>
+                <div class="col-4 p-0 m-0 pr-1 mb-3">
+                    <a href="#" class="btn btn-danger w-100">新手必读</a>
+                </div>
+                <div class="col-4 p-0 m-0 mb-3">
+                    <a href="#" class="btn btn-primary w-100">社区规范</a>
+                </div>
+                <!--min版块推荐-->
+                <div class="bg-white my_div_radius w-100 mb-3">
+                    <div class="w-100 text-left p-3 my_keywords_title text-center">推荐板块</div>
+                    <ul id="min_keywords" class="row p-0 m-0 w-100 text-center list-unstyled">
+                        <!--js请求填充min推荐板块--->
+                    </ul>
+                </div>
+                <!--min热点动态-->
+                <div class="bg-white my_div_radius w-100 mb-3">
+                    <div class="w-100 text-left p-3 my_keywords_title text-center">热点动态</div>
+                    <ul id="min_hot" class="row p-0 m-0 w-100 text-center list-unstyled">
+                         <!--js请求填充min热点动态--->
+                       
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--文章内容-->
+        <div class="col-lg-8 col-md-9 col-sm-12 row p-0 m-0 bg-white my_div_radius my_acticle_body" id="acticle_max">
+            <!---请求js填充--->
+
+            
+        </div> 
+        <div id="min_bottom" class="w-100 d-md-none d-sm-block mt-3">
+            <!--min关注我们-->
+            <div class="bg-white my_div_radius w-100 mb-3">
+                <div class="w-100 text-left p-3 my_keywords_title text-center">热点动态</div>
+                <ul id="min_attention_we" class="row p-0 m-0 pt-3 w-100 text-center list-unstyled">
+                    <li class="col-4 text-center">
+                        <img src="img/image_sq/weibo.png" class="mb-2"/>
+                        <p class="text-center  my_text_size">新浪微博</p>
+                    </li>
+                    <li class="col-4 text-center">
+                        <img src="img/image_sq/weixin.png" class="mb-2"/>
+                        <p class="text-center  my_text_size">微信公众号</p>
+                    </li>
+                    <li class="col-4 text-center">
+                        <img src="img/image_sq/toutiao.png" class="mb-2"/>
+                        <p class="text-center  my_text_size">今日头条</p>
+                    </li>
+                </ul> 
+            </div><!--min联系我们-->
+            <div class="bg-white my_div_radius w-100 mb-3">
+                <p class="col-md-12 p-0 m-0 p-3 my_keywords_title text-center">联系我们</p>
+                <ul class="list-unstyled row m-0 p-2">
+                    <li class="col-12 text-center my-2">热线服务时间: 09:00~24:00</li>
+                    <li class="col-12 text-center lg-h3">400-015-8899</li>
+
+                </ul>
+            </div>
+        </div>
+        <!--大屏显示的文章关键字-->
+        <div id="max_display_keywords" class="col-lg-4 col-md-3 d-none d-md-flex">
+            <div class="ml-lg-1 ml-md-0">
+                <a href="#" class="btn btn-success w-100 mb-3">发表新帖</a>
+                <ul id="keywords" class="row p-0 m-0 text-center bg-white my_div_radius list-unstyled mb-3">
+                    <!--js中请求填充---->
+                </ul>
+                <a href="#" class="btn btn-danger w-100 mb-3">新手必读</a>
+                <a href="#" class="btn btn-primary w-100 mb-3">社区规范</a>
+                <div class="bg-white my_div_radius mb-3">
+                    <p class="col-md-12 p-0 m-0 text-left pl-3 py-3 my_keywords_title">热点动态</p>
+                    <ul id="hot_article" class="list-unstyled  row m-0 p-3">
+                        <!---js请求填充-->
+                    </ul>
+                </div>
+                <div class="bg-white my_div_radius mb-3">
+                    <p class="col-md-12 p-0 m-0 pl-3 py-3 my_keywords_title">关注我们</p>
+                    <ul id="attention_we" class="list-unstyled row m-0 p-2">
+                        <li class="col-lg-4 col-mb-12 text-center">
+                            <img src="img/image_sq/weibo.png" class="mb-2"/>
+                            <p class="text-center  my_text_size">新浪微博</p>
+                        </li>
+                        <li class="col-lg-4 text-center col-mb-12">
+                            <img src="img/image_sq/weixin.png" class="mb-2"/>
+                             <p class="text-center  my_text_size">微信公众号</p>
+                        </li>
+                        <li class="col-lg-4 text-center col-mb-12">
+                            <img src="img/image_sq/toutiao.png" class="mb-2"/>
+                            <p class="text-center  my_text_size">今日头条</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white my_div_radius">
+                    <p class="col-md-12 p-0 m-0 pl-3 py-3 my_keywords_title">联系我们</p>
+                    <ul class="list-unstyled row m-0 p-2">
+                        <li class="col-12 text-center my-2">热线服务时间: 09:00~24:00</li>
+                        <li class="col-12 text-center lg-h3">400-015-8899</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-3 mt-md-5 bg-white" id="footer">
+    <div class="w-75 m-auto text-center text-center pb-3 my_foot_border pt-5">
+        <div class="w-75 w-sm-100 m-auto">
+            <ul class="list-unstyled row p-0 m-0">
+                <li class="col-lg-2 col-md-4 col-sm-6"><a href="#">黑鲨官网</a></li>
+                <li class="col-lg-2 col-md-4 col-sm-6"><a href="#">黑鲨商城</a></li>
+                <li class="col-lg-2 col-md-4 col-sm-6"><a href="#">小黑屋</a></li>
+                <li class="col-lg-2 col-md-4 col-sm-6"><a href="#">Joy Cloud</a></li>
+                <li class="col-lg-2 col-md-4 col-sm-6"><a href="#">用户协议</a></li>
+                <li class="col-lg-2 col-md-4 col-sm-6"><a href="#">隐私政策</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="w-75 m-auto my_foot_color">
+        <div class="row p-0 m-0 text-center">
+            <p class="p-0 col-lg-4 my-0 p-3">Powered by Discuz! X3.2 Licensed</p>
+            <p class="p-0 col-lg-8 my-0 p-3">Copyright © 2017-2018 Blackshark http://bbs.blackshark.com/ 赣ICP备17012659 All Rights Reserved</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/community.js"></script>
+</html>

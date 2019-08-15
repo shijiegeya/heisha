@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*导航处理>*/
+#nav_z_index{
+	position: relative;
+	z-index: 100;
+	background-color:#242424;
+	box-shadow: 0px 1px 15px rgba(17,210,7,0.3);
+}
+.my_border_color{
+	border-bottom:1px solid rgba(255,255,255,0.1);
+}
+/*nav字体*/
+
+@media screen and (min-width:992px ){/*d*/
+	#nav_z_index #content ul li a:hover{
+		color:#00ec00 !important;
+	}
+}
+@media screen and (max-width:990px ) and (min-width:950px){/*d*/
+	#my_footer ul#my_footer_ul{
+		padding-left: 4.5rem !important;
+	}
+}
+@media screen and (max-width:949px ) and (min-width:870px){/*d*/
+	#my_footer ul#my_footer_ul{
+		padding-left: 2.5rem !important;
+	}
+}
+@media screen and (max-width:991px ) and (min-width:768px) {/*z*/
+	#nav_z_index #content ul li a:hover{
+		color:#00ec00 !important;
+	}
+}
+@media screen and (max-width:767px) and (min-width:300px) {/*x*/
+	#nav_z_index #content ul li:hover{
+		color:#00ec00 !important;
+		background-color:rgba(17,210,7,0.3);
+	}
+	#nav_z_index #content ul li a:hover{
+		color:#00ec00 !important;
+	}
+}
+
+#nav_z_index .my_logo{
+	text-decoration: none;
+	font-family: "mv boli";
+}
+/*导航处理结束<*/
+/*左侧图片>*/
+#shop_left .my_height{
+    height:6rem;
+}
+#shop_left .my_center{
+    overflow: hidden;
+}
+#shop_left .my_center>ul{
+    width:30rem !important;
+    transition: 0.5s;
+}
+#shop_left .my_center>ul li{
+    width:5rem !important;
+}
+/*左侧图片<*/
+/*右侧图片>*/
+#shop_right .min_title{
+    margin-bottom:0.2rem;
+}
+#shop_right .bottom_money{
+    font-size:14px;
+    margin-bottom:1rem;
+}
+
+#shop_right .bottom_money a:link{
+    color:#00C03C;
+}
+#shop_right .money span:first-child{
+    font-size:1.5rem;
+    text-decoration: line-through;
+}
+#shop_right .money span:last-child{
+    color:#00C03C;
+    font-size:2rem
+}
+#shop_right .content-item{
+    background-color: #F8F8F8;
+    overflow: hidden;
+    font-size:12px;
+}
+
+#shop_right .content-item p{
+   margin:0.2rem 0 0 1rem;
+}
+#shop_right .content-item p:nth-child(3){
+    margin:0.2rem 0 1rem 1rem;
+ }
+ #shop_right .content-item p:last-child{
+    display: inline-block;
+ }
+#shop_right .content-item span{
+    background:black;
+    color:white;
+    padding:3px 5px;
+    display: inline-block;
+    margin-bottom:0.5rem; 
+}
+#shop_right .yjhx:link{
+   color:#00C03C;
+   font-size:14px;
+   margin-top:0.5rem;
+   display: block;
+}
+#shop_right .bottom-item{
+    border-top: 1px solid #E7E7E7;
+}
+#shop_right .bottom-item ul li+li{
+    margin-top:1rem;
+}
+#shop_right .bottom-item ul li div a{
+    width:100%;
+    height:100%;
+    display: inline-block;
+    border: 1px solid #DCE1E4;
+    border-radius: 3px;
+    color:#000;
+    text-decoration: none;
+}
+#shop_right .bottom-item ul li div .my_Aclick{
+    border: 1px solid #00C03C !important;
+    border-radius: 3px;
+}
+#shop_right .bottom-item ul li div:first-child{
+    width:5rem;
+    height:3rem;
+    text-align: center;
+    line-height: 3rem;
+    display: inline-block;
+    font-size:14px;
+}
+#shop_right .bottom-item ul li div+div{
+    width:10rem;
+    height:3rem;
+    text-align: center;
+    line-height: 3rem;
+    display: inline-block;
+    font-size:14px;
+    margin-left:1rem;
+}
+#shop_right .bottom-item ul li:last-child div{
+    border:0;
+}
+#shop_right .bottom-item ul li:last-child div button{
+    width:3rem;
+    height:100%;
+    text-align: center;
+    line-height: 2rem !important;
+    
+}
+#shop_right .bottom-item ul li:last-child div span{
+    display: inline-block;
+    width:3rem;
+    height:100%;
+    box-sizing: border-box;
+}
+#shop_right .bottom_btn{
+    margin-top:3rem;
+}
+
+#shop_right .bottom_btn button{
+    height:3rem !important;
+    padding:0 3rem;
+    color:white;
+    font-size:14px;
+}
+#shop_right .bottom_btn button:first-child{
+    background-color: black;
+    margin:0 3rem 0 0;
+}
+#shop_right .bottom_btn button+button{
+    background-color: #008E2C;
+}
+/*右侧图片<*/

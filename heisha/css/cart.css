@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin:0;
+}
+#my_ul{
+ 
+}
+#my_ul li{
+    border:1px solid #00ec00;
+    display: flex;
+    border-radius: 1rem;
+}
+#my_ul li div{
+    text-align: center;
+    line-height: 6.5rem;
+    height:6.5rem;
+    border-radius: 1rem;
+}
+#my_ul li div:first-child{
+    width: 3rem;
+}
+#my_ul li div+div{
+    margin-left:9%;
+}
+#my_ul li div:first-child>input{
+	width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 2.4rem;	
+}
+#my_ul li div>label{
+	    vertical-align: 0.45rem;
+}
+
+#bts{
+    width:13rem;
+    height:100%;
+    text-align: center;
+    line-height: 2rem !important;
+    background-color: #008E2C;
+    float: right;
+}
+.btsLeft{
+	width:13rem;
+    height:100%;
+    text-align: center;
+    line-height: 2rem !important;
+    background-color: #eee;
+    float: left;
+}
+#inps{
+    width:7rem;
+    height:100%;
+    text-align: center;
+   
+    float: right;
+}
+#inps div>input{
+	width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 0.8rem;
+}
+#inps div>label{
+	vertical-align: 0.45rem;
+	margin-right:0.2rem;
+}
+/*导航处理>*/
+#nav_z_index{
+	position: relative;
+	z-index: 100;
+	background-color:#242424;
+	box-shadow: 0px 1px 15px rgba(17,210,7,0.3);
+}
+.my_border_color{
+	border-bottom:1px solid rgba(255,255,255,0.1);
+}
+/*nav字体*/
+
+@media screen and (min-width:992px ){/*d*/
+	#nav_z_index #content ul li a:hover{
+		color:#00ec00 !important;
+	}
+}
+@media screen and (max-width:990px ) and (min-width:950px){/*d*/
+	#my_footer ul#my_footer_ul{
+		padding-left: 4.5rem !important;
+	}
+}
+@media screen and (max-width:949px ) and (min-width:870px){/*d*/
+	#my_footer ul#my_footer_ul{
+		padding-left: 2.5rem !important;
+	}
+}
+@media screen and (max-width:991px ) and (min-width:768px) {/*z*/
+	#nav_z_index #content ul li a:hover{
+		color:#00ec00 !important;
+	}
+}
+@media screen and (max-width:767px) and (min-width:300px) {/*x*/
+	#nav_z_index #content ul li:hover{
+		color:#00ec00 !important;
+		background-color:rgba(17,210,7,0.3);
+	}
+	#nav_z_index #content ul li a:hover{
+		color:#00ec00 !important;
+	}
+}
+
+#nav_z_index .my_logo{
+	text-decoration: none;
+	font-family: "mv boli";
+}
+/*导航处理结束<*/

@@ -1,0 +1,20 @@
+/*样式初始化*/
+*{
+	padding: 0;
+	margin: 0;
+}
+/*主题绿色文字*/
+.my_text_color{
+	color: #00ec00 !important;
+}
+/*主题文字大小*/
+.my_text_size{
+	font-size: 14px;
+}
+/*a标签去除下划线*/
+.my_a_decoration_none{
+	text-decoration:none !important;
+}
+.my_a_decoration_none:hover{
+	text-decoration:none !important;
+}

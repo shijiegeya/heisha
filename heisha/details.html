@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/comm.css"/>
+    <link rel="stylesheet" href="css/details.css" />
+    <!-- 导入3个js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+    	<div id="nav_z_index" class="row p-0 m-0 my_border_color">
+	    		<div class="col-lg-12 p-0 m-0 row">
+	    		<!--
+	            	作者：302785749@qq.com
+	            	时间：2019-05-25
+	            	描述：导航		--→ Id选择器，深情又专一
+	            -->
+	            	<div class="col-md-3 col-lg-3 offset-1  p-lg-2 pl-md-0 pr-md-0 pt-md-2 pb-md-2 d-none d-md-block">
+	            		<a href="#" class="h2  my_text_color  my_logo ">Black Shark</a>
+	            	</div>
+		            <div class="navbar navbar-expand-md bg-transparent navbar-dark col-md-8">
+		                <!--最前面不折叠的菜单项-->
+		                <a href="http://127.0.0.1:5500/index.html" class="navbar-brand d-md-none ml-sm-4">黑鲨官网</a>
+		                <!--在超小屏下出现的按钮-->
+		                <button class="navbar-toggler mr-sm-4" data-toggle="collapse" data-target="#content">
+		                    <!--按钮上的三条横线-->
+		                    <span class="navbar-toggler-icon"></span>
+		                </button>
+		                <!--折叠的导航-->
+		                <div id="content" class="collapse navbar-collapse w-100 row p-0 m-0 ">
+		                    <ul class="navbar-nav col-md-8 row p-0 m-0">
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="http://127.0.0.1:5500/index.html" class="nav-link text-white w-100 my_text_size">首页</a>
+		                        </li>
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="#" class="nav-link text-white w-100 my_text_size">产品</a>
+		                        </li>
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="http://127.0.0.1:5500/shopping.html" class="nav-link text-white w-100 my_text_size">商城</a>
+		                        </li>
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="#" class="nav-link text-white w-100 my_text_size">服务</a>
+		                        </li>
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="http://127.0.0.1:5500/community.html" class="nav-link text-white w-100 my_text_size">社区</a>
+		                        </li>
+		                        <li class="nav-item col-md-2 p-0 m-0 text-lg-center pl-5 p-md-0">
+		                            <a href="#" class="nav-link text-white w-100 my_text_size">Global</a>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+	            </div>
+            </div>
+</div>
+<div class="container p-0 mt-5">
+    <div class="w-100 row m-0 p-0">
+
+        <div class="col-5 p-0 m-0" id="shop_left">
+            <div class="w-100 border">
+                <img class="w-100" src="https://shop-1256119282.file.myqcloud.com/blackshark/20190529/20190529121835_601.png">
+            </div>
+            <div class="modal-open w-100 m-0 row p-0 my_height">
+                <div class="col-2 p-0 m-0 py-2" onclick="moveLeft()">
+                    <img src="img/image_details/z.png" class="w-100 h-100">
+                </div>
+                <div class="col-8 p-0 m-0 my_center">
+                    <ul class="list-unstyled h-100" id="ul_addimg">
+                        <li class="h-100 py-2 d-inline-block">
+                            <img  class="w-100 h-100 " src="https://shop-1256119282.file.myqcloud.com/blackshark/20190529/20190529121835_601.png">
+                        </li>
+                        <li class="h-100 py-2 d-inline-block">
+                            <img  class="w-100 h-100 " src="https://shop-1256119282.file.myqcloud.com/blackshark/20190529/20190529121838_153.png">
+                        </li>
+                        <li class="h-100 py-2 d-inline-block">
+                            <img  class="w-100 h-100 " src="https://shop-1256119282.file.myqcloud.com/blackshark/20190529/20190529121842_640.png">
+                        </li>
+                        <li class="h-100 py-2 d-inline-block">
+                            <img  class="w-100 h-100 " src="https://shop-1256119282.file.myqcloud.com/blackshark/20190529/20190529121845_50.png">
+                        </li>
+                        <li class="h-100 py-2 d-inline-block">
+                            <img  class="w-100 h-100 " src="https://shop-1256119282.file.myqcloud.com/blackshark/20190529/20190529121845_50.png">
+                        </li>
+                        <li class="h-100 py-2 d-inline-block">
+                            <img  class="w-100 h-100 " src="https://shop-1256119282.file.myqcloud.com/blackshark/20190529/20190529121848_65.png">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2 p-0 m-0 py-2" onclick="moveRight()">
+                    <img src="img/image_details/y.png" class="w-100 h-100">
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-7 p-0 m-0">
+            <div class="ml-5" id="shop_right">
+                    <h4>黑鲨游戏手机2 8GB+256GB 幻境蓝 官方标配</h4>
+                    <p class="mt-3 min_title">竞在操控、骁龙855、MagicPress立体操控、塔式全域液冷散热、X+2天线、AI游戏引擎</p>
+                    <div class="bottom_money">
+                        <span><a href="javascript:;">【新品直降500元】</a></span>
+                        <span>限时直降500元，速速来抢，手慢无</span>
+                    </div>
+                    <div class="money">
+                        <span>￥3799.00</span>
+                        <span id="price">￥3299.01</span>
+                    </div>
+                    <div>
+                        <div class="content-item p-4">
+                            <div>
+                                <span>赠品</span>
+                            </div>
+                            <p>黑鲨双翼手柄-左手支架 ×1（赠完即止）</p>
+                            <p>黑鲨双翼手柄-左手（H66L） ×1（赠完即止）</p>
+                            <div>
+                                <span>减价</span>
+                                <p>新品直降</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="yjhx">以旧换新</a>
+                    <div class="mt-3 bottom-item">
+                        <ul class="mt-3 list-unstyled">
+                            <li>
+                                <div>颜色</div>
+                                <div>
+                                    <a href="javascript:;" onclick="color(this)">幻境蓝</a>
+                                </div>
+                                <div>
+                                    <a href="javascript:;" onclick="color(this)">暗影黑</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>版本</div>
+                                <div>
+                                    <a href="javascript:;" onclick="banben(this)">8GB+256GB</a>
+                                </div>
+                                <div>
+                                    <a href="javascript:;" onclick="banben(this)">12GB+256GB</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>购买方式</div>
+                                <div>
+                                    <a href="javascript:;" onclick="fangshi(this)">官方标配</a>
+                                </div>
+                                <div>
+                                    <a href="javascript:;" onclick="fangshi(this)">背夹套装</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>数量</div>
+                                <div>
+                                    <button onclick="adds(this)">-</button>
+                                    <span>1</span>
+                                    <button onclick="adds(this)">+</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="bottom_btn">
+                            <button class="btn" onclick="jiagou()">加入购物车</button>
+                            <button class="btn">立即购买</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal show" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body">
+                <p>每项至少选择一个</p>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+</body>
+<script> 
+      
+        
+
+      var sum=0; 
+      function moveLeft(){
+          if(sum>-10){
+            sum+=-5;
+            $("#shop_left .my_center>ul").css({"margin-left":`${sum}rem`});
+          }
+      }
+      function moveRight(){
+        if(sum<0){
+            sum+=5;
+            $("#shop_left .my_center>ul").css({"margin-left":`${sum}rem`});
+          }
+      }
+      
+      //------
+      var colors = "";
+      var banbens = "";
+      var fangshis = "";
+      var adddata=1;
+      var imgs=$("#ul_addimg li:first-child img")[0].currentSrc;
+      var price = parseFloat(document.getElementById("price").innerHTML.substr(1)).toFixed(2);
+      function adds(c){
+          if(c.innerHTML=="+"){
+            c.previousElementSibling.innerHTML=parseInt(c.previousElementSibling.innerHTML)+1;
+            adddata=c.previousElementSibling.innerHTML;
+          }else{
+              if(c.nextElementSibling.innerHTML>1){
+                c.nextElementSibling.innerHTML=parseInt(c.nextElementSibling.innerHTML)-1;
+                adddata=c.nextElementSibling.innerHTML;
+              }
+          }
+      }
+      var arr=[];
+      var pushs=JSON.parse(localStorage.getItem("arrs"));
+      for(var i=0;i<pushs.length;i++){
+        arr.push(pushs[i]);
+      }
+      console.log(arr)
+      function jiagou(){
+          if(colors!=""&&banbens!=""&&banbens!=""&&fangshis!=""){
+            var obj={};
+            obj.img=imgs;
+            obj.colors=colors;
+            obj.banbens=banbens;
+            obj.fangshis=fangshis;
+            obj.adddata=adddata;
+            obj.price=parseFloat(price*adddata).toFixed(2);
+           
+            arr.push(obj)
+            console.log(arr);
+            localStorage.setItem("arrs",JSON.stringify(arr));
+            location.href="http://127.0.0.1:5500/cart.html"
+          }else{
+            $("#mymodal").modal();
+          }
+      }
+      function color(c){
+        var items = c.parentNode.parentNode.children;
+        for(var i=1;i<items.length;i++){
+            items[i].children[0].className="";
+        }
+        colors=c.innerHTML;
+        c.className ="my_Aclick";
+      }
+      function banben(c){
+        var items = c.parentNode.parentNode.children;
+        for(var i=1;i<items.length;i++){
+            items[i].children[0].className="";
+        }
+        banbens=c.innerHTML;
+        c.className ="my_Aclick";
+      }
+      function fangshi(c){
+        var items = c.parentNode.parentNode.children;
+        for(var i=1;i<items.length;i++){
+            items[i].children[0].className="";
+        }
+        fangshis=c.innerHTML;
+        c.className ="my_Aclick";
+      }
+      //console.log(a_inner);
+</script>
+</html>
